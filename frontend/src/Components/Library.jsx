@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import styles from "./Css/Library.module.css";
 
 function Library() {
   const [data, setData] = useState([]);
@@ -39,13 +40,20 @@ function Library() {
         <h3>Somehting went wrong...</h3>
       ) : (
         <>
-          {data.map((item) => {
-            return (
-              <div>
-                <Link to={item._id}>{item.bookname}</Link>
-              </div>
-            );
-          })}
+          <div className={styles.libraryCont}>
+            {data.map((item) => {
+              return (
+                <div key={item._id} className={styles.eachLibrary}>
+                  <Link className={styles.bookLink} to={item._id}>
+                    {item.bookname}
+                  </Link>
+                  <div className={styles.bookImg}>
+                    <img src={item.imgUrl} alt={item.bookname} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </>
       )}
     </div>

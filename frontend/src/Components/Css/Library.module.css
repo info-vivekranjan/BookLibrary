@@ -1,0 +1,22 @@
+.libraryCont {
+  border: 1px soli black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+}
+
+.eachLibrary {
+  border: 1px solid silver;
+  width: 45%;
+  margin: 1vw;
+}
+
+.bookLink {
+  text-decoration: none;
+}
+
+.bookImg img {
+  width: 20vw;
+  margin-top: 10px;
+}
