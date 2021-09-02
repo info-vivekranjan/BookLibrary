@@ -10,10 +10,16 @@
   border: 1px solid silver;
   width: 45%;
   margin: 1vw;
+  transition: 300ms;
+  border-radius: 3px;
+}
+.eachLibrary:hover {
+  box-shadow: 1px 1px 4px 6px rgba(192, 192, 192, 0.418);
 }
 
 .bookLink {
   text-decoration: none;
+  color: rgb(0, 14, 75);
 }
 
 .bookImg img {

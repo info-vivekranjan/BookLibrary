@@ -48,12 +48,26 @@ function LibraryDetails() {
         <div>
           <h3>Description: </h3>
         </div>
-        <div>
+        <div style={{ width: "60vw", margin: "auto", lineHeight: "26px" }}>
           <div>{data.description}</div>
         </div>
       </div>
       <br />
-      <button onClick={goBack}>{"<<--"} Go Back</button>
+      <button
+        onClick={goBack}
+        style={{
+          padding: "5px 10px",
+          fontSize: "16px",
+          border: "none",
+          backgroundColor: "crimson",
+          color: "white",
+          fontWeight: "600",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        {"<<--"} Go Back
+      </button>
       <br />
       <br />
     </div>
